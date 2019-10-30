@@ -1,5 +1,8 @@
-import 'package:app_widgets/io/tela_inicial_cagece.dart';
+
+import 'package:app_widgets/io/hawai/tela_inicial_hawai.dart';
 import 'package:flutter/material.dart';
+
+import 'cagece/tela_inicial_cagece.dart';
 
 class TelaEntrada extends StatefulWidget {
   @override

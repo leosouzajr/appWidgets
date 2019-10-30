@@ -1,5 +1,6 @@
-import 'package:app_widgets/io/conta_tab.dart';
-import 'package:app_widgets/io/inicio_tab.dart';
+
+import 'package:app_widgets/io/cagece/conta_tab.dart';
+import 'package:app_widgets/io/cagece/inicio_tab.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

@@ -47,6 +47,11 @@ flutter:
    - images/dropbox.jpg
    - images/icone_atendente.png
    - images/pizza.jpg
+   - images/massas.jpg
+   - images/pasteis.png
+   - images/sanduiche.jpg
+   - images/person.png
+   - images/user.png
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

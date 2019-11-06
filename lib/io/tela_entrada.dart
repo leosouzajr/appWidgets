@@ -1,4 +1,5 @@
 import 'package:app_widgets/io/hawai/tela_inicial_hawai.dart';
+import 'package:app_widgets/io/hawai/tela_splash_hawai.dart';
 import 'package:flutter/material.dart';
 
 import 'cagece/tela_inicial_cagece.dart';
@@ -46,6 +47,6 @@ class _TelaEntradaState extends State<TelaEntrada> {
   void abrirTelaInicialHawai(BuildContext context) {
      Navigator.push(
         context, 
-        MaterialPageRoute(builder: (context) => TelaInicialHawai()));
+        MaterialPageRoute(builder: (context) => TelaSplashHawai()));
   }
 }

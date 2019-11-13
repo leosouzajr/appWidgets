@@ -47,6 +47,6 @@ class _TelaEntradaState extends State<TelaEntrada> {
   void abrirTelaInicialHawai(BuildContext context) {
      Navigator.push(
         context, 
-        MaterialPageRoute(builder: (context) => TelaInicialHawai()));
+        MaterialPageRoute(builder: (context) => TelaSplashHawai()));
   }
 }

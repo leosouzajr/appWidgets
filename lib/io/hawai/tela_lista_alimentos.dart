@@ -9,13 +9,39 @@ class TelaListaALimentos extends StatefulWidget {
 }
 
 class _TelaListaALimentosState extends State<TelaListaALimentos> {
-  List<String> listaPizzas = ["Calabresa", "Mussarela", "Mista", "Frango"];
-  List<String> listaSanduba = [
-    "x-tudo",
-    "hamburguer",
-    "cheesebacon",
-  ];
-  List<String> listaAtual = [];
+  List<Map <String,dynamic> > listaPizzas = [
+     {
+       "sabor": "Calabresa",
+       "valor": 15.00
+     },
+     {
+       "sabor": "Mussarela",
+       "valor": 12.00
+     },
+     {
+       "sabor": "Frango com catupiry",
+       "valor": 17.00
+     }
+   ];
+ List<Map <String,dynamic> > listaSanduba = [
+     {
+       "sabor": "hamburguer",
+       "valor": 8.00
+     },
+     {
+       "sabor": "X-tudo",
+       "valor": 14.00
+     },
+     {
+       "sabor": "cheeseburguer",
+       "valor": 13.00
+     },
+     {
+       "sabor": "bauru",
+       "valor": 11.00
+     }
+   ];
+  List<Map<String,dynamic>> listaAtual = [];
 
   @override
   void initState() {
@@ -38,12 +64,23 @@ class _TelaListaALimentosState extends State<TelaListaALimentos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text("Cardápio"),
+      ),
       body: Container(
         child: ListView.builder(
           shrinkWrap: true,
           itemCount: listaAtual.length,
           itemBuilder: (context, index) {
-            return Text(listaAtual[index]);
+            return ListTile(
+              title: Text(listaAtual[index]["sabor"],
+                style: TextStyle(fontSize: 24)),
+              trailing: Text(
+                listaAtual[index]["valor"].toString(),
+                style: TextStyle(color: Colors.red,fontSize: 20),
+              ),
+            );
           },
         ),
       ),

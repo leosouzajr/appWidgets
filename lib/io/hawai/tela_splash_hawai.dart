@@ -8,11 +8,12 @@ class TelaSplashHawai extends StatefulWidget {
 }
 
 class _TelaSplashHawaiState extends State<TelaSplashHawai> {
+ 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Duration duration = Duration(seconds: 2);
+    Duration duration = Duration(seconds: 5);
     Future.delayed(duration).then((onValue) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => TelaLoginHawai()));
